@@ -2,7 +2,7 @@ node('built-in')
 {
  stage('continuousdownload')
  {
-   git 'https://github.com/vivekkumargangam/maven.git'
+   git 'https://github.com/vivekkumargangam/multibranchmaven.git'
  }
  stage('continuousbuild')
  {
