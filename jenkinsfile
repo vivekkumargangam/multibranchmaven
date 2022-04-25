@@ -2,7 +2,7 @@ node('built-in')
 {
  stage('continuousdownload')
  {
-   git 'https://github.com/vivekkumargangam/maven.git'
+   git 'https://github.com/vivekkumargangam/multibranchmaven.git'
  }
  stage('continuousbuild')
  {
@@ -15,7 +15,7 @@ node('built-in')
  stage('continuoustesting')
  {
   git 'https://github.com/vivekkumargangam/FunctionalTesting.git'
-  sh 'java -jar /home/ubuntu/.jenkins/workspace/scriptedpipeline3/testing.jar '
+  sh 'java -jar /home/ubuntu/.jenkins/workspace/multibranchpipeline/testing.jar '
  }
  stage('continuousdelivery')
  {
